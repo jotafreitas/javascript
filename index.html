@@ -283,13 +283,70 @@
         // }
 
 
-        alert("DIGITE 3 NÚMEROS E EU OS LISTAREI EM ORDEM CRESCENTE E DECRESCENTE")
-        let num1= parseInt(prompt("Valor 1: "));
-        let num2= parseInt(prompt("Valor 2: "));
-        let num3= parseInt(prompt("Valor 3: "));
-        let lista=[num1,num2,num3];
-        alert("crescente: "+lista.sort()+"\ndecrescente: "+lista.reverse());
+        // alert("DIGITE 3 NÚMEROS E EU OS LISTAREI EM ORDEM CRESCENTE E DECRESCENTE")
+        // let num1= parseInt(prompt("Valor 1: "));
+        // let num2= parseInt(prompt("Valor 2: "));
+        // let num3= parseInt(prompt("Valor 3: "));
+        // let lista=[num1,num2,num3];
+        // alert("crescente: "+lista.sort()+"\ndecrescente: "+lista.reverse());
+
+
+    //     while(true){
+    //     let estudo = prompt("QUE HORÁRIO VOCÊ ESTUDA?\nM - Matutino\nV - Vespertino\nN - Noturno");
+    //     estudo.toUpperCase()
+    //     if (estudo=='M'){
+    //         alert("Bom Dia!")
+    //     }
+    //     else if(estudo=='V'){
+    //         alert("Boa Tarde!")
+    //     }
+    //     else if(estudo=='N'){
+    //         alert("Boa Noite!")
+    //     }
+    //     else{
+    //         alert("Valor Inválido!")
+    //     }
+    // }
+
+        while(true){
+        window.alert("AUMENTE SEU SALÁRIO AQUI");
+        let salario = parseFloat(prompt("Digite seu salário: "));
+        if(salario>1 && salario<=280){
+            alert("Seu salário antes do reajuste é de R$"+salario);
+            aumento= salario*20/100;
+            salarionovo = salario+(salario*20/100);
+            alert("Foi aplicado um aumento de 20%, ou seja R$"+aumento+" reais");
+            alert("Parabéns, seu novo salário é de R$"+salarionovo);
+        }
+        else if(salario>280 && salario<=700){
+            alert("Seu salário antes do reajuste é de R$"+salario);
+            aumento= salario*15/100;
+            salarionovo = salario+(salario*15/100);
+            alert("Foi aplicado um aumento de 15%, ou seja R$"+aumento+" reais");
+            alert("Parabéns, seu novo salário é de R$"+salarionovo);
+        }
+        else if(salario>700 && salario<=1500){
+            alert("Seu salário antes do reajuste é de R$"+salario);
+            aumento= salario*10/100;
+            salarionovo = salario+(salario*10/100);
+            alert("Foi aplicado um aumento de 10%, ou seja R$"+aumento+" reais");
+            alert("Parabéns, seu novo salário é de R$"+salarionovo);
+        }
         
+        else if(salario>1500){
+            alert("Seu salário antes do reajuste é de R$"+salario);
+            aumento= salario*5/100;
+            salarionovo = salario+(salario*5/100);
+            alert("Foi aplicado um aumento de 5%, ou seja R$"+aumento+" reais");
+            alert("Parabéns, seu novo salário é de R$"+salarionovo);
+        }
+        else{
+            alert("ALGO DEU ERRADO, TENTE NOVAMENTE!")
+        }
+    }
+        
+
+
 
     </script>
             <!-- <button onclick="window.print()">Print this page</button> -->
