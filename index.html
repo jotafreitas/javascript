@@ -188,23 +188,99 @@
         // }
 
 
-        let current = parseFloat(prompt("Digite seu salário mensal: ")) 
-        if (current<500){
-            current = current+(current*15/100)
-            alert("Seu novo salário é de: R$"+current)
+        // let current = parseFloat(prompt("Digite seu salário mensal: ")) 
+        // if (current<500){
+        //     current = current+(current*15/100)
+        //     alert("Seu novo salário é de: R$"+current)
+        // }
+        // else if(current>=500 && current<=1000){
+        //     current = current+(current*10/100)
+        //     alert("Pelo reajuste de 10%, seu novo salário é de: R$"+current)
+        // }
+        // else if(current>1000){
+        //     current = current+(current*5/100)
+        //     alert("Pelo reajuste de 5%, seu novo salário é de: R$"+current)
+        // }
+        // else{
+        //     alert("digite números válidos")
+        // }
+            
+
+        // let sexo = prompt("Qual seu sexo em em:");
+        // if (sexo=='F' || sexo=='f'){
+        //     alert("FEMININO");
+        // }
+        // else if(sexo=='M' || sexo=='m'){
+        //     alert("MASCULINO");
+        // }
+        // else if(sexo=='O' || sexo=='o'){
+        //     alert("OUTRO");
+        // }
+        // else{
+        //     alert("Sexo inválido");
+        // }
+
+        // let n1 = parseInt(prompt("Nota 1: "))
+        // let n2 = parseInt(prompt("Nota 2: "))
+        // media=(n1+n2)/2;
+        // if(media==10){
+        //     alert("Aprovado com Distinção, parabéns pela média "+media)
+        // }
+        // else if(media>=7 && media<10){
+        //     alert("Aprovado")
+        // }
+        // else if(media<7){
+        //     alert("Reprovado")
+        // }
+        // else{
+        //     alert("ERRO ERRO ERRO ERRO ERRO")
+        // }
+
+        // let num1 = parseInt(prompt("Primeiro número: "));
+        // let num2 = parseInt(prompt("Segundo número: "));
+        // let num3 = parseInt(prompt("Terceiro número: "));
+        
+        // if (num1 > num2 && num1 >num3){
+        //     alert(num1+" É O MAIOR");
+        // }
+        // else if(num2 > num1 && num2 > num3){
+        //     alert(num2+" É O MAIOR");
+        // }
+        // else if(num3 > num1 && num3 > num2){
+        //     alert(num3+" É O MAIOR");
+        // }
+        // else{
+        //     alert("SAI DOENÇA, PARA DE INVENTAR MODA");
+        // }
+        
+        let = num1 = parseInt(prompt("Número 1: "));
+        let = num2 = parseInt(prompt("Número 2: "));
+        let = num3 = parseInt(prompt("Número 3: "));
+
+        if(num1>num2 && num1>num3 && num2>num3){
+            alert(num1+" é o maior e "+num3+" é o menor");
         }
-        else if(current>=500 && current<=1000){
-            current = current+(current*10/100)
-            alert("Pelo reajuste de 10%, seu novo salário é de: R$"+current)
+        else if(num2>num1 && num2>num3 && num1>num3){
+            alert(num2+" é o maior e "+num3+" é o menor");
         }
-        else if(current>1000){
-            current = current+(current*5/100)
-            alert("Pelo reajuste de 5%, seu novo salário é de: R$"+current)
+        else if(num3>num2 && num3>num1 && num1>num2){
+            alert(num3+" é o maior e "+num2+" é o menor");
+        }
+        else if(num1>num2 && num1>num3 && num3>num2){
+            alert(num1+" é o maior e "+num2+" é o menor");
+        }
+        else if(num2>num1 && num2>num3 && num3>num1){
+            alert(num2+" é o maior e "+num1+" é o menor");
+        }
+        else if(num3>num2 && num3>num1 && num2>num1){
+            alert(num3+" é o maior e "+num1+" é o menor");
+        }
+        else if(num1==num2 || num2==num3 || num3==num1){
+            alert("VALORES IDENTICOS")
         }
         else{
-            alert("digite números válidos")
+            alert("pare de tentar quebrar o código")
         }
-
 
     </script>
             <!-- <button onclick="window.print()">Print this page</button> -->
