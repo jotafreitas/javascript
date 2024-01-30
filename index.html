@@ -173,19 +173,38 @@
         //     alert("os valores são iguais")
         // }
 
-        let valor = parseInt(prompt("Digite um número e eu te direi se ele é negativo, positivo ou neutro: "))
-        if (valor <0){
-            alert("NEGATIVO")
+        // let valor = parseInt(prompt("Digite um número e eu te direi se ele é negativo, positivo ou neutro: "))
+        // if (valor <0){
+        //     alert("NEGATIVO")
+        // }
+        // else if (valor>0){
+        //     alert("POSITIVO")
+        // }
+        // else if(valor==0){
+        //     alert("Neutro")
+        // }
+        // else{
+        //     alert("apenas números")
+        // }
+
+
+        let current = parseFloat(prompt("Digite seu salário mensal: ")) 
+        if (current<500){
+            current = current+(current*15/100)
+            alert("Seu novo salário é de: R$"+current)
         }
-        else if (valor>0){
-            alert("POSITIVO")
+        else if(current>=500 && current<1001){
+            current = current+(current*10/100)
+            alert("Pelo reajuste de 10%, seu novo salário é de: R$"+current)
         }
-        else if(valor==0){
-            alert("Neutro")
+        else if(current>1000){
+            current = current+(current*5/100)
+            alert("Pelo reajuste de 5%, seu novo salário é de: R$"+current)
         }
         else{
-            alert("apenas números")
+            alert("digite números válidos")
         }
+
 
     </script>
             <!-- <button onclick="window.print()">Print this page</button> -->
