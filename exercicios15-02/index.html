@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios 15/02</title>
+</head>
+<body>
+
+    <script>
+            
+            // var soma = 0;
+            // var num1= parseInt(window.prompt("Digite o primeiro número: "));
+            // var num2= parseInt(window.prompt("Digite o segundo número: "));
+            
+            // for (var i = num1+1; i<num2; i++){
+            //    console.log(i);
+            // soma+=i
+            // };
+            // console.log("soma",soma);
+
+
+            //exercício de for
+            // var soma = 0;   
+            // for (i = 1; i<6; i++){
+               
+            //     var nota = parseInt(window.prompt("Nota: "));
+            //     var soma = soma + nota
+
+            // };
+            //     var media;
+            //         console.log("===",media=(soma)/5);
+            //fim do exercício de for
+
+            
+            //exercício de 3 candidatos
+            
+            var eleitores = parseInt(prompt("Quantas pessoas vão votar?"))
+            var votos = 0;
+            var candi_1 = 0;
+            var candi_2 = 0;
+            var candi_3 = 0;
+
+
+            for (cont = 1; cont <= eleitores ; cont++){
+                votos = parseInt(prompt("1 - João\n2 - José\n3- Joaquim\n"));
+            };
+            
+
+        switch(votos){
+            case 1:
+                candi_1 = parseInt(candi_1 + 1)
+                console.log(`${candi_1} votos para João`)
+                break
+
+            case 2:
+                candi_2 = parseInt(candi_2 + 1)
+                window.alert(`${candi_2} votos para José`)
+                break
+
+            case 3:
+                candi_3 = parseInt(candi_3 + 1)
+                window.alert(`${candi_3} votos para Joaquim`)
+                break
+
+            default:
+                window.alert("Vote em um candidato valido!!")
+        }
+
+    if (candi_1 > candi_2 && candi_1 > candi_3){
+        window.alert(`João ganhou com ${votos}`)
+    }
+
+    if (candi_2 > candi_1 && candi_2 > candi_3){
+        window.alert(`José ganhou com ${votos}`)
+    }
+
+    if (candi_3 > candi_1 && candi_3 > candi_2){
+        window.alert(`Joaquim ganhou com ${votos}`)
+    }   
+
+    </script>
+    
+</body>
+</html>
