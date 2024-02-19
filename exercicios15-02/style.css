@@ -1,0 +1,16 @@
+.container {
+    background-color:aquamarine;
+    text-align: center;
+}
+
+.container-fluid {
+    background-color:blueviolet;
+}
+
+.red{
+    background-color: cadetblue;
+}
+
+.black{
+    background-color: coral;
+}
